@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+
+    <style>
+    
+        .container{
+            text-align: right;
+        }
+
+        .checkbox{
+            text-align: center;
+        }
+
+        .flex-element{
+            display: inline-flex;
+        }
+
+
+        .center{
+            margin: auto;
+        }
+
+        #btn-create{
+            margin-top: 15%;
+        }
+
+        #btn-end{
+            margin-top: 5%;
+        }
+
+        #data-input{
+            margin-top: 15px;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" id="init-btns">
+            <button  id="btn-create" class="btn btn-primary btn-lg center">התחל תקופת מילואים</button>
+
+        </div>
+        <div id="data-input">
+            <table class="table table-bordered table table-hover table table-sm">
+                <thead class="table-head">
+                    <tr class="table-warning">
+                        <th scope="col">#</th>
+                        <th scope="col">fשם מלא</th>
+                        <th scope="col">מספר אישי</th>
+                        <th scope="col">טלפון</th>
+                        <th scope="col">סטאטוס</th>
+                        <th scope="col">צלם</th>
+                        <th scope="col">ציוד</th>
+                        <th scope="col">מספר יממי"ם</th>
+                        <th scope="col">פעולות</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="table-warning" scope="row">1</th>
+                        <td class="width"><input class="name form-control" placeholder="הזן טקסט"></td>
+                        <td><input id="self-num" class="form-control" placeholder="הזן מספר"></td>
+                        <td><input id="phone-num" class="form-control" placeholder="הזן מספר"></td>
+                        <td><select id="presence" class="form-control">
+                                <option value="0">נמצא</option>
+                                <option value="1">לא נמצא</option>
+                            </select></td>
+                        <td>
+                            <div class="checkbox form-control">
+                                <input type="checkbox" id="have_special">
+                            </div>
+
+                        </td>
+                        <td><select id="gear" class="form-control">
+                                <option value="weapon">מספר נשק</option>
+                                <option value="scope">מספר כוונת</option>
+                                <option value="special" disabled>מספר צלם</option>
+                            </select></td>
+                        <td><input id="amount-days" class="form-control" placeholder="הזן מספר"></td>
+                        <td colspan="2" class="flex-element">
+                            <button id="btn-delete" class="btn  btn-danger btn-sm"><span class="fas fa-trash"></span></button>
+                            <button id="btn-edit" class="btn  btn-warning btn-sm"><span class="fas fa-edit"></span></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="table-warning" scope="row">
+                            <button id="btn-add" class="btn btn-primary btn-sm"><span class="fas fa-plus"></span></button>
+                        </th>
+
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="comments">
+                <textarea id="commander-comments" class="form-control" placeholder="הערות מפקד"></textarea>
+            </div>
+        </div>
+        <div class="row" id="end-btn">
+            <button  id="btn-end" class="btn btn-primary btn-lg center">סיים תקופת מילואים</button>
+        </div>
+
+    </div>
+ 
+<script type="text/javascript" src="js/bundle.js"></script></body>
+
+</html>
