@@ -26,7 +26,7 @@ function showTable() {
     document.getElementById('btn-end').style.display = 'block';
 }
 
-
+//the function checks if there is an active reserve-period
 function checkIfActive() {
     
     let reserve_periods = app_state.reserve_periods.getReservePeriods(); //get the reservePeriods array from 
@@ -45,7 +45,7 @@ function checkIfActive() {
 }
 
 
- 
+
 document.getElementById('btn-create').addEventListener('click', () => {
         // let dateStart = getDate() + ' / ' + getMonth() + ' / ' + getFullYear();
         
