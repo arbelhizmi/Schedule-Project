@@ -98,7 +98,6 @@ document.getElementById('btn-add').addEventListener('click', () => {
     table.insertAdjacentHTML('beforeend', markup);
     app_state.soldiers.addSoldier('arbel', 5784726, 524488128);
     loadAppDB();
-    console.log("im in add button");
    
 });
 
